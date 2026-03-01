@@ -141,14 +141,6 @@ Step 5: Scheduler detects task complete → returns final image path
 
 A five-scenario automated evaluation was conducted testing tool chaining, agentic reasoning, and task termination:
 
-| ID | Prompt | Expected Chain | Tool Success | Task Accuracy | Time |
-|---|---|---|---|---|---|
-| E1 | Segment the bird and change its color to green | SAM → DIFFUSION | ✅ PASS | ✅ PASS | 2056s |
-| E2 | Does this image contain a bird? | NO TOOL | ❌ FAIL | ❌ FAIL (called tool) | 1998s |
-| E3 | Change bird's color to red, but segment first | SAM → DIFFUSION | ✅ PASS | ✅ PASS | 2284s |
-| E4 | Only segment the bird and stop | SAM → NO TOOL | ❌ FAIL | ❌ FAIL (called tool) | 2072s |
-| E5 | Change the color of the bird to purple | SAM → DIFFUSION | ✅ PASS | ✅ PASS | 3373s |
-
 **Results summary:**
 - Tool chaining success rate: 3/5 (60%) — all image editing tasks completed successfully
 - All failures were caused by LLaVA's reasoning limitations (misunderstanding termination and task scope), not by the orchestration architecture
@@ -237,4 +229,5 @@ The evaluation results confirm that the bottleneck in current multimodal agent s
 
 **Phillipp Gery** — Purdue University, MS Interdisciplinary Engineering (Autonomy & Robotics)
 Fulbright Scholar | GradBridge Program (Purdue & UC Berkeley)
+
 
