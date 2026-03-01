@@ -2,9 +2,6 @@
 
 A modular multimodal AI agent that translates complex, multi-step natural language instructions into sequential, chained image-to-image operations — combining a large language model (LLaVA) for agentic reasoning, SAM for promptable perception, and a conditional diffusion model for spatially-controlled image generation.
 
-> **Purdue University | MS Interdisciplinary Engineering (Autonomy & Robotics)** | Fulbright Scholar
-
-📄 [Read the Paper](Gery2025TMA.pdf)
 
 ---
 
@@ -240,3 +237,4 @@ The evaluation results confirm that the bottleneck in current multimodal agent s
 
 **Phillipp Gery** — Purdue University, MS Interdisciplinary Engineering (Autonomy & Robotics)
 Fulbright Scholar | GradBridge Program (Purdue & UC Berkeley)
+
